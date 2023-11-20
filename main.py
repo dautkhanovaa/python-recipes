@@ -8,8 +8,6 @@ from recipes import recipe_ns
 from auth import auth_ns
 from flask_cors import CORS
 
-# тут у нас начало будет девочкиииииии
-
 def create_app(config):
     app = Flask(__name__, static_url_path="/", static_folder="./client/build")
     app.config.from_object(config)
