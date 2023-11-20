@@ -12,7 +12,7 @@ class Recipe:
 
 
 
-# наш класс рецепт
+# наш классный) рецепт
 class Recipe(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
     title = db.Column(db.String(), nullable=False)
