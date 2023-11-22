@@ -48,7 +48,6 @@ class User:
     password:string
 """
 
-
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(25), nullable=False, unique=True)
@@ -56,10 +55,6 @@ class User(db.Model):
     password = db.Column(db.Text(), nullable=False)
 
     def __repr__(self):
-        """
-        returns string rep of object
-
-        """
         return f"<User {self.username}>"
 
     def save(self):
